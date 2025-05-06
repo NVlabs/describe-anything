@@ -181,7 +181,7 @@ if __name__ == "__main__":
     demo._block_thread = demo.block_thread
     demo.block_thread = lambda: None
     demo.launch(
-        share=False,
+        share=True,
         server_name=args.server_addr,
         server_port=args.server_port,
         ssr_mode=False,
