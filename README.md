@@ -25,7 +25,9 @@ pip install git+https://github.com/NVlabs/describe-anything
 # You can also clone the repo and install it locally
 git clone https://github.com/NVlabs/describe-anything
 cd describe-anything
-pip install -v .
+# if sam2 required.
+./get_sam2_weight.sh 
+pip install -v . # pip install -v ".[sam2]" if sam2 required.
 ```
 
 We also provide a self-contained script for detailed localized image descriptions without installing additional dependencies. Please refer to the [examples/dam_with_sam_self_contained.py](examples/dam_with_sam_self_contained.py) or [this Colab](https://colab.research.google.com/drive/1bQqAMRH2vdjoWpDpuMSb3SBf_OAntadZ?usp=sharing) for more details.

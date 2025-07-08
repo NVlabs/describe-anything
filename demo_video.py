@@ -314,7 +314,7 @@ if __name__ == "__main__":
         )
 
     demo.launch(
-        share=False,
+        share=True,
         server_name=args_cli.server_addr,
         server_port=args_cli.server_port,
     )
